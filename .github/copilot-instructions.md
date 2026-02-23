@@ -17,6 +17,10 @@
 
 ## Style
 - Prefer explicit imports and avoid wildcard imports.
+
+## Documentation
+
 - Add brief comments only when the intent is not obvious.
-- Functions and methods should have docstrings as documentation.
+- Use docstrings to document functions, classes, and modules.
 - Use type hints for function parameters and return types.
+- The language the documentation is written is English.
