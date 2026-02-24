@@ -30,6 +30,9 @@ conda activate <ENVIRONMENT_NAME>
 > [!IMPORTANT] DEPENDENCIES
 > Both files need to be updated whenever new packages are added to the project or existing ones are updated.
 
+> [!IMPORTANT] CODE-WORKSPACE
+> In the `code-workspace` file, set `"CONDA_ENV"` to the name of the conda environment you created. This will allow VS Code to automatically activate the correct environment when you open the workspace.
+
 ```powershell
 conda list --export > requirements.txt & conda env export > environment.yml
 ```
