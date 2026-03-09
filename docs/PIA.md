@@ -53,11 +53,11 @@ What kind of personal data is processed? If none is processed no PIA is needed. 
 
 1. What do you want to achieve? 
 2. What is the intended effect on individuals? 
-3. What are the benefits of the processing – for you, and more broadly?
+3. What are the benefits of the processing ï¿½ for you, and more broadly?
 
 ## Consultation process
 
-1. Describe when and how you will seek individuals’ views – or justify why it’s not appropriate to do so. 
+1. Describe when and how you will seek individualsï¿½ views ï¿½ or justify why itï¿½s not appropriate to do so. 
 2. Who else do you need to involve within your organisation? 
 3. Do you need to ask your processors to assist? 
 4. Do you plan to consult information security experts, or any other experts?
@@ -76,10 +76,10 @@ What kind of personal data is processed? If none is processed no PIA is needed. 
 
 ## Identify and assess risks
 
-| Describe source of risk and nature of potential impact on individuals. | Likelihood of harm           | Severity of harm                | Overall  risk       |
-| ------------------------------------------------------------ | ---------------------------- | ------------------------------- | ------------------- |
-|                                                              | Remote, possible or probable | Minimal, significant  or severe | Low, medium or high |
-|                                                              |                              |                                 |                     |
+| #   | Describe source of risk and nature of potential impact on individuals. | Likelihood of harm           | Severity of harm                | Overall  risk       |
+| --- | ---------------------------------------------------------------------- | ---------------------------- | ------------------------------- | ------------------- |
+|     |                                                                        | Remote, possible or probable | Minimal, significant  or severe | Low, medium or high |  |
+|     |                                                                        |                              |                                 |                     |
 
 ## Identify measures to reduce risk
 
