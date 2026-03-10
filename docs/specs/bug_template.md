@@ -42,7 +42,6 @@ Architecture of the system and/or layout of the GUI. Specification of the input 
 
 - [ ] Initialize dev environment
 - [ ] Checkout the version from Git
-- [ ] Can the application be compiled?
 - [ ] Are there any open warnings?
 - [ ] Does the application work as a manually performed test?
 - [ ] Is the layout and theme working in the UI?
