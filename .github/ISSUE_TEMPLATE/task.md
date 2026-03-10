@@ -28,6 +28,14 @@ What conditions must be met? High pressure? Many users?
 
 Are there any?
 
+### Acceptance Tests
+
+- [ ] Given <context>, when <action>, then <expected outcome>.
+
+### Prepare the development
+
+- [ ] Create a `feature` branch if needed (Maybe configuration changes or new project files)
+
 ### :package: Deployment
 
 - [ ] Merge `bugfix` into `main` or `hotfix` into `production` and `main` and remove the `bugfix` branch via PR
