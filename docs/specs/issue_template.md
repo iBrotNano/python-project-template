@@ -1,8 +1,7 @@
 # :dart: Requirements <ID>
 
-## :heavy_check_mark: Acceptance tests
-
-- [ ] Test to validate the requirement.
+> [!NOTE] ISSUE
+> Link to the issue
 
 ## :triangular_ruler: Design
 

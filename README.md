@@ -9,11 +9,6 @@ I used Anaconda to set up the project environment.
 ```powershell
 conda create -n <ENVIRONMENT_NAME>
 conda activate <ENVIRONMENT_NAME>
-# If you don't have conda, you can use pip to install the required packages.
-# pip install -r requirements.txt
-conda list --export > requirements.txt
-# Exports the conda environment to a YAML file.
-conda env export > environment.yml
 ```
 
 You can install the requirements using:
@@ -29,9 +24,6 @@ conda activate <ENVIRONMENT_NAME>
 
 > [!IMPORTANT] DEPENDENCIES
 > Both files need to be updated whenever new packages are added to the project or existing ones are updated.
-
-> [!IMPORTANT] CODE-WORKSPACE
-> In the `code-workspace` file, set `"CONDA_ENV"` to the name of the conda environment you created. This will allow VS Code to automatically activate the correct environment when you open the workspace.
 
 ```powershell
 conda list --export > requirements.txt & conda env export > environment.yml
@@ -59,3 +51,40 @@ The tests can then be run with:
 ```powershell
 pytest
 ```
+
+## Optional local VS Code terminal setup (opt-in)
+
+Machine-specific terminal profile settings are intentionally not committed to the shared workspace file.
+If you want an auto-activating conda terminal in VS Code, add this to your local `.vscode/settings.json` or into a `project.local.code-workspace` file:
+
+```json
+{
+    "terminal.integrated.profiles.windows": {
+        "WorkspacePwsh": {
+            "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
+            "args": [
+                "-NoExit",
+                "-Command",
+                "cd $env:WORKSPACE_ROOT; conda activate $env:CONDA_ENV"
+            ],
+            "env": {
+                "WORKSPACE_ROOT": "${workspaceFolder}",
+                "CONDA_ENV": "base"
+            }
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "WorkspacePwsh"
+}
+```
+
+Adjust the profile name, shell path, and environment name to your local machine.
+
+> [!TIP] Test data
+> You can generate test data by executing `tools/create_test_recipes.py`. It will generate recipes under `data`.
+
+> [!IMPORTANT] CODE-WORKSPACE
+> In the `code-workspace` file, set `"CONDA_ENV"` to the name of the conda environment you created. This will allow VS Code to automatically activate the correct environment when you open the workspace.
+
+## Security and Privacy
+
+Under `docs/pias` is documented what personal data is processed in the app, how it is processed, and what measures are taken to protect it. These are living documents that should be updated whenever there are changes to the data processing in the app. It is important to keep these documents up to date to ensure compliance with data protection regulations and to maintain transparency with users about how their data is being used.

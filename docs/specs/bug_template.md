@@ -1,12 +1,11 @@
-## :dart: Requirements <ID>
+# :bug: Bug <ID>
 
-## :heavy_check_mark: Acceptance tests
-
-- [ ] Test to validate the requirement.
+> [!NOTE] ISSUE
+> Link to the issue
 
 ## :triangular_ruler: Design
 
-How can the task be done?
+Architecture of the system and/or layout of the GUI. Specification of the input and output data.
 
 ## :microscope: Dissection
 
@@ -19,13 +18,16 @@ How can the task be done?
 
 ### :clipboard: TODOs
 
-- [ ] Create a `feature` branch if needed (Maybe configuration changes or new project files)
-- [ ] Update the dependencies
-- [ ] Document the updated dependencies in CHANGELOG.md
-- [ ] Here is the place for development todo items
+- [ ] Create a `bugfix`  or `hotfix` branch
+- [ ] Try to reproduce the bug
+- [ ] Investigate why it happens
+- [ ] Plan the needed changes to fix the bug
+- [ ] Write tests
+- [ ] Fix the bug
 - [ ] Check if the exception handling is well done
 - [ ] Check if further tests must be written
 - [ ] Are there license conflicts for new dependencies?
+- [ ] Remove deactivated code
 - [ ] Are all TODOs in the code done?
 - [ ] Write meaningful comments
 - [ ] Are there any compiler warnings?
@@ -62,7 +64,7 @@ How can the task be done?
 - [ ] Are there new database migrations before merging to `main`? This ensures that the database will be in the correct state after deployment.
 - [ ] Shut down the dev environment
 
-### :memo: Notes
+### :spiral_notepad: Notes
 
 Notes about the development of the issue.
 
@@ -115,7 +117,7 @@ Link to related PIA
 
 ## :package: Deployment
 
-- [ ] Merge `feature` into `master` or `hotfix` into `production` and `master` and remove the `bugfix` branch
+- [ ] Merge `bugfix` into `main` or `hotfix` into `production` and `main` and remove the `bugfix` branch via PR
 - [ ] Check if the compiled artifact is valid
 - [ ] Cleanup the Git history locally on the dev system
 
@@ -162,6 +164,7 @@ If the exact version is not critical, it may be sufficient to simply use the ima
 Here is a template for a PR:
 
 ```markdown
+
 ## Notes
 
 BREAKING CHANGE: Is this a breaking change?
