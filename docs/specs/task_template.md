@@ -39,6 +39,7 @@ How can the task be done?
 
 - [ ] Initialize dev environment
 - [ ] Checkout the version from Git
+- [ ] Can the application be compiled?
 - [ ] Are there any open warnings?
 - [ ] Does the application work as a manually performed test?
 - [ ] Is the layout and theme working in the UI?
@@ -62,21 +63,6 @@ How can the task be done?
 ### :memo: Notes
 
 Notes about the development of the issue.
-
-> [!NOTE]
-> This is a note
-
-> [!TIP]
-> This is a tip.
-
-> [!WARNING]
-> This is a warning
-
-> [!IMPORTANT]
-> This info is important to know.
-
-> [!CAUTION]
-> This has possibly negative consequences.
 
 ## :mag: Debug
 
@@ -127,6 +113,27 @@ Hints and tricks that were helpful during the implementation or documentation.
 | :red_circle:         | Fehlschlag                |
 | :green_circle:       | Erfolg                    |
 | :yellow_circle:      | Problem                   |
+</details>
+
+<details>
+    <summary>Notification panels</summary>
+
+```markdown
+> [!NOTE]
+> This is a note
+
+> [!TIP]
+> This is a tip.
+
+> [!WARNING]
+> This is a warning
+
+> [!IMPORTANT]
+> This info is important to know.
+
+> [!CAUTION]
+> This has possibly negative consequences.
+```
 </details>
 
 <details> 
