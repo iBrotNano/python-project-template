@@ -1,7 +1,7 @@
 # :bug: Bug <ID>
 
 > [!NOTE] ISSUE
-> Link to the issue
+> Issue: Link to the issue
 
 ## :triangular_ruler: Design
 
@@ -93,11 +93,6 @@ Link to related PIA
 ### :link: Links
 
 - Any other documentation should be linked here. Intern and extern.
-
-## :clapper: Demo
-
-- [ ] Setup a fresh demo environment
-- [ ] Check all acceptance tests
 
 ## :unicorn: Magie
 
