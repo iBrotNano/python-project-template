@@ -47,6 +47,11 @@ How can the task be done?
 - [ ] Is every input validated in frontend and backend?
 - [ ] Are the requirements and acceptance criteria met?
 - [ ] Is the code correct, clean, maintainable and well structured?
+- [ ] Check if the exception handling is well done
+- [ ] Are there license conflicts for new dependencies?
+- [ ] Is there any deactivated code?
+- [ ] Are all TODOs in the code done?
+- [ ] Are there enough meaningful comments
 - [ ] Is the code well tested?
   - [ ] Does the test name describe the context and goal from a business perspective? What is being specified, not how it is technically implemented.
   - [ ] One aspect per test?
