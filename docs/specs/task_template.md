@@ -51,7 +51,7 @@ How can the task be done?
 - [ ] Are there license conflicts for new dependencies?
 - [ ] Is there any deactivated code?
 - [ ] Are all TODOs in the code done?
-- [ ] Are there enough meaningful comments
+- [ ] Are there enough meaningful comments?
 - [ ] Is the code well tested?
   - [ ] Does the test name describe the context and goal from a business perspective? What is being specified, not how it is technically implemented.
   - [ ] One aspect per test?
@@ -133,50 +133,5 @@ Hints and tricks that were helpful during the implementation or documentation.
 
 > [!CAUTION]
 > This has possibly negative consequences.
-```
-</details>
-
-<details> 
-    <summary>PR</summary>
-
-A PR needs a title that lets the reviewer recognize which ticket it belongs to. The format is:
-
-`#<issue number> <issue title>`
-
-It helps the reviewer if you provide details about the development environment. Breaking changes in services can make it unclear which versions of services the reviewer should use for the review.
-
-The versions can be set up from artefacts or via Git by using the correct branches.
-
-If the exact version is not critical, it may be sufficient to simply use the image with latest.
-
-Here is a template for a PR:
-
-```markdown
-## Notes
-
-BREAKING CHANGE: Is this a breaking change?
-
-Is there anything special to note? Perhaps deviations from the ticket or details that came up during development?
-
-## Changes
-
-- Fixed a typo
-- Optimized code
-- New feature XYZ
-
-## Development environment
-
-### Versions
-
-| Application | Version |
-| :---------- | ------: |
-| Client      |   1.5.0 |
-| Service     |   1.2.4 |
-| KeyCloak    |  latest |
-| Postgres    |  latest |
-
-### Setup
-
-Scripts or test data used? Ideally attach or link it.
 ```
 </details>
