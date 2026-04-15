@@ -77,7 +77,8 @@ Machine-specific terminal profile settings are intentionally not committed to th
 If you want an auto-activating conda terminal in VS Code, add this to your local `.vscode/settings.json` or into a `project.local.code-workspace` file:
 
 ```json
-{
+"settings": {
+    ...,
     "terminal.integrated.profiles.windows": {
         "WorkspacePwsh": {
             "path": "C:\\Program Files\\PowerShell\\7\\pwsh.exe",
@@ -93,7 +94,7 @@ If you want an auto-activating conda terminal in VS Code, add this to your local
         }
     },
     "terminal.integrated.defaultProfile.windows": "WorkspacePwsh"
-}
+},
 ```
 
 Adjust the profile name, shell path, and environment name to your local machine.
