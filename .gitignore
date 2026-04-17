@@ -208,3 +208,4 @@ __marimo__/
 
 # Project specific files
 project.local.code-workspace
+.conda
