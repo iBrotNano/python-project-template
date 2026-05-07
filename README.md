@@ -4,36 +4,31 @@
 
 ## Initializing the Project
 
-I used Anaconda to set up the project environment. I only use conda to manage the Python environment and pip to manage the dependencies. You can create a new conda environment with:
+I used Miniconda to set up the project environment. I only use conda to manage the Python environment and pip to manage the dependencies.
+
+I created a new conda environment like this:
 
 ```powershell
-conda create -n <ENVIRONMENT_NAME>
-conda activate <ENVIRONMENT_NAME>
+conda create -n <ENVIRONMENT> python=3.14
 ```
 
-You can install the requirements using:
+You can create the environment and install the the dependencies by running either of the following commands:
 
 ```powershell
-# Or from environment.yml (recommended for conda)
-conda env create -f environment.yml -n <ENVIRONMENT_NAME>
-conda activate <ENVIRONMENT_NAME>
+conda env create -f environment.yml -n <ENVIRONMENT>
+conda activate <ENVIRONMENT>
 
 # From requirements.txt
 pip install -r requirements.txt
-
 ```
+> [!NOTE]
+> If you prefer to use a local installed Python instead of conda, you can skip the conda environment creation step and just use pip to install the dependencies. However, using a virtual environment (like conda or venv) is recommended to avoid conflicts with other projects and to keep your global Python installation clean.
 
 > [!IMPORTANT]
-> Both files need to be updated whenever new packages are added to the project or existing ones are updated.
+> Both files, *environment.yml* and *requirements.txt*, need to be updated whenever new packages are added to the project or existing ones are updated.
 
 ```powershell
 pip list --format=freeze --not-required > requirements.txt & conda env export --no-builds --ignore-channels --from-history | Select-String -NotMatch "^prefix:" > environment.yml
-```
-
-An existing environment can be updated with:
-
-```powershell
-pip install -r requirements.txt --upgrade
 ```
 
 ## Updating Dependencies
@@ -50,7 +45,7 @@ The version numbers in the `requirements.txt` must be updated manually. Updating
 If there are any outdated packages, you can update them with:
 
 ```powershell
-conda update -n <ENVIRONMENT_NAME> --all # Only if there are any dependencies installed with conda 
+conda update -n <ENVIRONMENT> --all # Only if there are any dependencies installed with conda 
 pip install -r requirements.txt --upgrade
 ```
 
@@ -89,7 +84,7 @@ If you want an auto-activating conda terminal in VS Code, add this to your local
             ],
             "env": {
                 "WORKSPACE_ROOT": "${workspaceFolder}",
-                "CONDA_ENV": "base"
+                "CONDA_ENV": "<ENVIRONMENT>"
             }
         }
     },
@@ -100,9 +95,6 @@ If you want an auto-activating conda terminal in VS Code, add this to your local
 ```
 
 Adjust the profile name, shell path, and environment name to your local machine.
-
-> [!TIP]
-> You can generate test data by executing `tools/create_test_recipes.py`. It will generate recipes under `data`.
 
 > [!IMPORTANT]
 > In the `local.code-workspace` file, set `"CONDA_ENV"` to the name of the conda environment you created. This will allow VS Code to automatically activate the correct environment when you open the workspace.
